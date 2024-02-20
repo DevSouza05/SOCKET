@@ -4,6 +4,7 @@ import socket
 servidor = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 servidor.bind(('localhost',7777))
+print("ouvindo")
 servidor.listen(1)
 
 #criando objeto de conexao com cliente

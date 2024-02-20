@@ -15,7 +15,7 @@ client.send(nameFile.encode())
 with open(nameFile,'wb') as file:
    while 1:
       data = client.recv(1000000)
-        if not data:
+      if not data:
             break
       file.write(data)
 
