@@ -10,8 +10,8 @@ nameFile =str(input('Arquivo>'))
 
 client.send(nameFile.encode())
 
-
 #wb:write byte
+#abrindo o aqruivo
 with open(nameFile,'wb') as file:
    while 1:
       data = client.recv(1000000)
